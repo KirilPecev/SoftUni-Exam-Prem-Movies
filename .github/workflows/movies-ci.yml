@@ -28,6 +28,8 @@ jobs:
         cache: 'npm'
     - name: Install dependencies    
       run: npm install
+    - name: Install playwright
+      run: npx playwright install
     - name: Start app
       run: npm start & npx wait-on http://localhost:8080
     - name: Run unit tests
