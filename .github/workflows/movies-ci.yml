@@ -31,8 +31,8 @@ jobs:
     - name: Start app
       run: npm start & npx wait-on http://localhost:8080
     - name: Run unit tests
-      run: npm test:unit
+      run: npm run test:unit
     - name: Run UI tests
-      run: npm test:ui
+      run: npm run test:ui
     - name: Display Username
       run: echo "My username is k.pecev"
